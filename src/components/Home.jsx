@@ -4,6 +4,7 @@ import bg from "../assets/background.jpg";
 function Home() {
   return (
     <main
+    name='home'
       style={{ backgroundImage: `url(${bg})` }}
       className="h-screen w-full text-white bg-no-repeat bg-cover md:bg-right"
     >
@@ -25,7 +26,7 @@ function Home() {
               duration={700}
               className="group text-white w-fit px-6 py-3 my-2 flex 
             items-center  bg-sky-500
-            cursor-pointer font-normal"
+            cursor-pointer font-bold"
             >
               Share Reviews
             </button>

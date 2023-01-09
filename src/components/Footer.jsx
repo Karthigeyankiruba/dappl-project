@@ -9,37 +9,18 @@ import Logo from "../assets/logo2.png";
 function Footer() {
   return (
     <footer
+    name='contact'
       style={{ backgroundImage: `url(${image})` }}
       className="w-full h-full text-white p-8 bg-no-repeat bg-cover"
       
     >
          <img className="pt-8 text-3xl" src={Logo} alt="" />
       <p className="py-4">Dappl Applications & Products Private Limited</p>
-      {/*
-      <div className="flex flex-row items-center justify-center">
-          <div className="">
-            <h4 className="text-2xl font-bold">CONTACT US</h4>
-            <hr/>
-            <p> United Kingdom(UK)</p>
-            <MdLocationOn /> <p>1200 Thorpe Park, Century Way, Leeds, West Yorkshire, United Kingdom, LS15 8ZA</p>
-           
-           <IoMdCall /> <p>+44 7474303816</p>
-
-          </div>
-
-          <div>
-            <h2>India</h2>
-            <MdLocationOn /> <p>Level 8 & 9, Olympia Teknos, No 28, SIDCO Industrial Estate, Guindy, Chennai 600032, Tamil Nadu, India</p>
-            <IoMdCall />  <p>+91 90807 61281</p>
-          </div>
-      </div> */}
+     
      
 
      <div className="max-w-7xl mx-auto">
-     {/* <img 
-            className="py-4 "
-            src={Logo} alt="" />
-            <p>Dappl Applications & Products Private Limited</p> */}
+     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div className="mb-5 leading-relaxed">
            

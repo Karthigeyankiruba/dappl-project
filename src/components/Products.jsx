@@ -2,9 +2,11 @@ import React from 'react'
 import image1 from '../assets/Rectangle 37.png';
 import image2 from '../assets/Rectangle 38.png';
 import image3 from '../assets/Rectangle 39.png';
-function ProductsToORder() {
+function Products() {
   return (
-    <section className='w-full h-screen bg-white flex flex-col items-center justify-center text-black text-center p-4'>
+    <section
+    name='products'
+     className='w-full h-screen bg-white flex flex-col items-center justify-center text-black text-center p-4'>
         <h1 className="font-bold text-5xl my-10">
         Products to Order<span className="text-blue-400">.</span>
       </h1>
@@ -26,4 +28,4 @@ function ProductsToORder() {
   )
 }
 
-export default ProductsToORder
+export default Products

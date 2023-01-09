@@ -2,7 +2,9 @@ import React from "react";
 
 function Subscription() {
   return (
-    <section className="w-full h-full bg-[#244763] flex flex-col items-center justify-center text-white p-8">
+    <section
+    name='subscription'
+     className="w-full h-full bg-[#244763] flex flex-col items-center justify-center text-white p-8">
       <h1 className="font-bold text-5xl my-10">
         Subscription<span className="text-blue-400">.</span>
       </h1>
@@ -27,7 +29,7 @@ function Subscription() {
        
       </div> */}
 
-      <div class="flex flex-row w-full h-full items-center justify-center text-black gap-6">
+      <div class="flex flex-col sm:flex-row w-full h-full items-center justify-center text-black gap-6">
 
 
 

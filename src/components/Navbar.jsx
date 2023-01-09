@@ -11,46 +11,52 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "Home",
+      name: "Home",
+      link:'home'
     },
     {
       id: 2,
-      link: "How It Works",
+      name: "How It Works",
+      link:'works'
     },
     {
       id: 3,
-      link: "Sectors",
+      name: "Sectors",
+      link:'sectors'
     },
     {
       id: 4,
-      link: "Products",
+      name: "Products",
+      link:'products'
     },
     {
       id: 5,
-      link: "Subscription",
+      name: "Subscription",
+      link:'subscription'
     },
     {
       id: 6,
-      link: "Contact Us",
+      name: "Contact Us",
+      link:'contact'
     },
   ];
 
   return (
     <div className="flex justify-between items-center w-full h-[90px] text-white bg-white px-4 fixed">
       <div>
-       {/* <h1 className="text-5xl font-signature ml-2">Karthick</h1> */}
+
        <img className="absolute left-0 top-0 p-6"
        src={Logo}
         alt="" />
         
       </div>
       <ul className="hidden md:flex">
-        {links.map(({ link, id }) => (
+        {links.map(({ link, id ,name}) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
+            className={`px-4 cursor-pointer capitalize hover:scale-105 duration-200 ${name === 'Home' ? 'text-blue-500 font-bold' : 'text-gray-500 font-medium'} `}
           >
-            <Link to={link} smooth duration={500}>{link}</Link>
+            <Link to={link} smooth duration={500}>{name}</Link>
           </li>
         ))}
       </ul>
@@ -66,13 +72,13 @@ const Navbar = () => {
       nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-gray-500">
          <li></li>
-        {links.map(({ link, id }) => (
+        {links.map(({ link, id ,name}) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6
-              text-4xl"
+              className={`px-4 cursor-pointer capitalize py-6
+              text-4xl  ${name === 'Home' ? 'text-blue-500 font-bold' : 'text-gray-500 font-medium'}`}
             >
-                          <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
+                          <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{name}</Link>
             </li>
           ))}
          
@@ -87,3 +93,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

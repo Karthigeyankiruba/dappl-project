@@ -5,7 +5,7 @@ function Review() {
   return (
     <div
       style={{ backgroundImage: `url(${Vector})` }}
-      name="review"
+      name="works"
       className="w-full h-full text-black"
     >
       <div className="flex flex-col items-center justify-center p-20">

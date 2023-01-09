@@ -3,12 +3,12 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import ProductsToORder from "./components/ProductsToORder";
+import Products from "./components/Products";
 import Review from "./components/Review";
 import Sectors from "./components/Sectors";
 import Subscription from "./components/Subscription";
 import Testimonial from "./components/Testimonial";
-import User2 from "./components/User2";
+import User3 from "./components/User3";
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
     <Navbar />
     <Home />
     <Cards />
-    <User2 />
+    <User3 />
     <Review />
     <BussinesBenefits />
     <Sectors />
-    <ProductsToORder />
+    <Products />
     <Subscription />
     <Testimonial />
     <Footer />
