@@ -29,22 +29,22 @@ function User3() {
 
     <div className="w-full h-screen flex flex-col items-center justify-center bg-pink-100/80 text-black">
       <div>
-        <h1 className="text-4xl font-bold">Why Dappl Review ?</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold mt-10">Why Dappl Review ?</h1>
       </div>
-      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-col w-full h-full sm:flex-row justify-center items-center gap-5 mt-0">
        
        {
         cards.map((item) => {
             return(
-                <div class="group relative cursor-pointer items-center justify-center overflow-hidden">
+                <div class="group relative cursor-pointer items-center justify-center overflow-hidden" key={item.id}>
                 <div class="h-96 w-72">
                   <img
                     class="h-full w-full object-cover transition-transform duration-500"
                     src={item.image}
-                    alt=""
+                    alt={item.name}
                   />
                 </div>
-                {/* <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div> */}
+
                 <div class="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
                   <h1 class="absolute w-full  text-2xl font-bold text-blue-500 bg-white hover:bg-white/60">
                    {item.name}
