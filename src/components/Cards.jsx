@@ -5,7 +5,7 @@ import user2 from "../assets/Ellipse 21.png";
 import user4 from "../assets/Ellipse 23.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import { useRaf, useWindowSize } from "react-use";
+import {  useWindowSize } from "react-use";
 
 function Cards() {
   const { width } = useWindowSize();
