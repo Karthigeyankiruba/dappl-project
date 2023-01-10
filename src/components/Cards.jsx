@@ -5,7 +5,7 @@ import user2 from "../assets/Ellipse 21.png";
 import user4 from "../assets/Ellipse 23.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import { useWindowSize } from "react-use";
+import { useRaf, useWindowSize } from "react-use";
 
 function Cards() {
   const { width } = useWindowSize();
@@ -67,7 +67,7 @@ function Cards() {
     },
   ];
   return (
-    <div className="w-full h-full bg-[#244763] mx-auto flex justify-center items-center sm:flex-row p-6 overflow-x-hidden m-0">
+    <div className="w-full h-full bg-[#244763] mx-auto flex justify-center items-center sm:flex-row p-6 m-0">
       <Splide
         options={{
           perPage,
@@ -82,14 +82,14 @@ function Cards() {
           return (
             <SplideSlide key={card.id}>
               <div className="max-w-[264px] min-h-[153px] mx-auto bg-white rounded-lg shadow-md relative my-8 text-left">
-                <div className="relative">
+
                   <img
                     className="-left-[20px] -top-[30px] absolute"
                     src={card.img}
                     alt="profile"
                   />
-                </div>
-                <p className="pl-8 pt-8 p-2 text-black text-[14px]">
+
+                <p className="pl-10 pt-8 p-2 text-black text-[14px]">
                   {card.content}
                 </p>
               </div>
@@ -98,6 +98,8 @@ function Cards() {
         })}
       </Splide>
     </div>
+
+
   );
 }
 

@@ -42,7 +42,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-[90px] text-white bg-white px-4 fixed">
+    <div className="flex justify-between items-center w-full h-[90px] text-white bg-white px-4 fixed z-10 drop-shadow-lg">
       <div>
 
        <img className="absolute left-0 top-0 p-6"

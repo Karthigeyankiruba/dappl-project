@@ -60,11 +60,11 @@ function Footer() {
         </ul>
        </div>
        <div className="mb-5">
-        <h4 className="text-xl font-semibold pb-2 ">STAY INFORMED</h4><hr/>
-        <p>Subscribe to our newsletter to receive early discount offers, updates and new products info.</p>
+        <h4 className="text-xl font-semibold pb-2">STAY INFORMED</h4><hr/>
+        <p className="mt-2">Subscribe to our newsletter to receive early discount offers, updates and new products info.</p>
         <form>
             <input
-            className="w-full bg-black/30 border-none outline-none px-4 py-2 text-gray-300 text-sm"
+            className="w-full bg-black/30 border-none outline-none px-4 py-2 text-gray-300 text-sm mt-2"
              type="email" placeholder="Enter Your Email" />
 
         </form>
